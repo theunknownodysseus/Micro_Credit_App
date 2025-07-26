@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ThemeProvider, useTheme } from './context/ThemeContext';
 import Registration from './components/Registration';
+import LoanEligibility from './components/LoanEligibility';
 
 function AppContent() {
   const [currentStep, setCurrentStep] = useState(0);
@@ -100,6 +101,7 @@ function App() {
   return (
     <ThemeProvider>
       <AppContent />
+      <LoanEligibility />
     </ThemeProvider>
   );
 }
